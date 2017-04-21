@@ -33,6 +33,6 @@ def execute_game():
                 buzzed_team = team
                 GPIO.output(team.led_table, HIGH)
                 #temporarily print to the terminal
-                print("GOT TEAM INPUT FROM: " + buzzed_team = team);
+                print("GOT TEAM INPUT FROM: " + buzzed_team.name);
         except KeyboardInterrupt:
             exit()
