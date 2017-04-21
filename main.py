@@ -24,15 +24,15 @@ for team in teams:
     GPIO.setup(team.led_self, GPIO.OUT)
     GPIO.setup(team.led_op, GPIO.OUT)
 
-
-#run game loop
-while True:
-    try:
-        input_state = GPIO.input(team.button)
-        if(input_state == True):
-            buzzed_team = team
-            GPIO.output(team.led_table, HIGH)
-            #temporarily print to the terminal
-            print("GOT TEAM INPUT FROM: " + buzzed_team = team);
-    except KeyboardInterrupt:
-        exit()
+def execute_game():
+    #run game loop
+    while True:
+        try:
+            input_state = GPIO.input(team.button)
+            if(input_state == True):
+                buzzed_team = team
+                GPIO.output(team.led_table, HIGH)
+                #temporarily print to the terminal
+                print("GOT TEAM INPUT FROM: " + buzzed_team = team);
+        except KeyboardInterrupt:
+            exit()
